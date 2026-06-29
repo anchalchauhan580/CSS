@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Assignment</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ffff00;
+    font-family:"Times New Roman", serif;
+    min-height:100vh;
+}
+
+h1{
+    text-align:center;
+    font-size:55px;
+    margin:25px 0 50px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    margin:60px 0;
+}
+
+.number{
+    font-size:35px;
+    font-weight:bold;
+    width:50px;
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+
+@keyframes rotateClockwise{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotateAntiClockwise{
+    from{
+        transform:rotate(360deg);
+    }
+    to{
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes skewXAnimation{
+    0%,100%{
+        transform:skewX(-20deg);
+    }
+    50%{
+        transform:skewX(20deg);
+    }
+}
+
+@keyframes skewYAnimation{
+    0%,100%{
+        transform:skewY(-20deg);
+    }
+    50%{
+        transform:skewY(20deg);
+    }
+}
+
+@keyframes stretchHorizontal{
+    0%,100%{
+        transform:scaleX(1);
+    }
+    25%{
+        transform:scaleX(1.5);
+    }
+    50%{
+        transform:scaleX(0.6);
+    }
+    75%{
+        transform:scaleX(1.5);
+    }
+}
+
+@keyframes stretchVertical{
+    0%,100%{
+        transform:scaleY(1);
+    }
+    25%{
+        transform:scaleY(1.5);
+    }
+    50%{
+        transform:scaleY(0.6);
+    }
+    75%{
+        transform:scaleY(1.5);
+    }
+}
+
+/* =====================
+   ROW 1
+===================== */
+
+.skew-x{
+    width:120px;
+    height:120px;
+    background:#2d8c87;
+    animation:skewXAnimation 2s ease-in-out infinite;
+}
+
+/* =====================
+   ROW 2
+===================== */
+
+.skew-y{
+    width:120px;
+    height:120px;
+    background:#4f5f61;
+    animation:skewYAnimation 2s ease-in-out infinite;
+}
+
+/* =====================
+   ROW 3
+===================== */
+
+.rotate-box{
+    width:120px;
+    height:120px;
+    background:#2d8c87;
+    animation:rotateClockwise 3s linear infinite;
+}
+
+/* =====================
+   ROW 4
+===================== */
+
+.rectangle{
+    width:130px;
+    height:80px;
+    background:#87ceeb;
+    border:2px solid #000;
+    animation:stretchHorizontal 2s ease-in-out infinite;
+}
+
+.vertical{
+    width:80px;
+    height:130px;
+    background:#7b1515;
+    animation:stretchVertical 2s ease-in-out infinite;
+}
+
+.green-box{
+    width:120px;
+    height:120px;
+    background:#148314;
+    animation:rotateAntiClockwise 3s linear infinite;
+}
+
+/* =====================
+   LINK
+===================== */
+
+.link{
+    text-align:center;
+    margin:50px 0;
+}
+
+.link a{
+    color:blue;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.link a:hover{
+    color:#0000cc;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:900px){
+
+    .row{
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .skew-x,
+    .skew-y,
+    .rotate-box,
+    .green-box{
+        width:90px;
+        height:90px;
+    }
+
+    .rectangle{
+        width:100px;
+        height:60px;
+    }
+
+    .vertical{
+        width:60px;
+        height:100px;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Try To Replicate This</h1>
+
+<div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="number">1.</div>
+
+        <div class="skew-x"></div>
+        <div class="skew-x"></div>
+        <div class="skew-x"></div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="number">2.</div>
+
+        <div class="skew-y"></div>
+        <div class="skew-y"></div>
+        <div class="skew-y"></div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+        <div class="number">3.</div>
+
+        <div class="rotate-box"></div>
+        <div class="rotate-box"></div>
+        <div class="rotate-box"></div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="row">
+        <div class="number">4.</div>
+
+        <div class="rectangle"></div>
+
+        <div class="vertical"></div>
+
+        <div class="green-box"></div>
+    </div>
+
+</div>
+
+<div class="link">
+    <a href="#">Let's Go And Try Another Things</a>
+</div>
+
+</body>
+</html>

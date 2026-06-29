@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ddd;
+    font-family:"Times New Roman", serif;
+}
+
+/* Heading */
+.title1{
+    background:linear-gradient(to right,red,green,yellow);
+    text-align:center;
+    padding:10px;
+    text-decoration:underline;
+}
+
+/* Menu */
+.menu-box{
+    width:50%;
+    margin:20px auto;
+    background:#4fd1c5;
+    border:2px solid red;
+    border-radius:20px;
+    padding:20px;
+}
+
+.menu-box ul{
+    width:200px;
+    margin:auto;
+}
+
+/* Offerings */
+.offerings{
+    background:#8de6c8;
+    border:2px solid black;
+    border-radius:20px;
+    padding:20px;
+    margin:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:#12dfe6;
+    border:2px solid green;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.center-card{
+    width:400px;
+}
+
+/* Performer Title */
+.title2{
+    background:linear-gradient(to right,red,orange,yellow,red);
+    text-align:center;
+    margin:30px 15px;
+    text-decoration:underline;
+}
+
+/* Performers */
+.performers{
+    background:radial-gradient(circle,blue,cyan,green);
+    padding:50px;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.student{
+    background:yellow;
+    width:230px;
+    text-align:center;
+    padding:20px;
+    border:2px solid red;
+    border-radius:15px;
+}
+
+.student h2,
+.student p,
+.student h3{
+    color:brown;
+    margin:20px 0;
+    text-decoration:underline;
+}
+
+/* Career */
+.career-title{
+    background:red;
+    color:white;
+    text-align:center;
+    margin-top:20px;
+    padding:10px;
+}
+
+/* Top Boxes */
+.top-boxes{
+    display:flex;
+}
+
+.small-box{
+    width:33.33%;
+    padding:20px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    min-height:100px;
+}
+
+.green{
+    background:lightgreen;
+}
+
+.sky{
+    background:lightblue;
+}
+
+.blue{
+    background:blue;
+}
+
+/* Main Content */
+.main-content{
+    display:flex;
+}
+
+.content{
+    width:87%;
+    background:orange;
+    min-height:150px;
+    padding:20px;
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.sidebar{
+    width:13%;
+    background:black;
+    color:white;
+    padding:20px;
+}
+
+.sidebar a{
+    color:white;
+}
+
+.sidebar li{
+    margin-bottom:10px;
+}
+
+/* Footer */
+.footer{
+    background:#11dbe7;
+    text-align:center;
+    margin-top:30px;
+    padding:10px;
+    border:2px solid black;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Independence Day</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f5f5f5;
+}
+
+.scene{
+    width:900px;
+    height:450px;
+    position:relative;
+    overflow:hidden;
+    border:2px solid #ccc;
+}
+
+/* Sky */
+.sky{
+    position:absolute;
+    width:100%;
+    height:70%;
+    background:
+    linear-gradient(
+        to bottom,
+        #6eb7ff,
+        #dff3ff
+    );
+}
+
+/* Clouds */
+.cloud{
+    position:absolute;
+    width:140px;
+    height:50px;
+    background:white;
+    border-radius:50px;
+}
+
+.cloud::before{
+    content:"";
+    position:absolute;
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:50%;
+    left:20px;
+    top:-25px;
+}
+
+.cloud::after{
+    content:"";
+    position:absolute;
+    width:70px;
+    height:70px;
+    background:white;
+    border-radius:50%;
+    right:15px;
+    top:-30px;
+}
+
+.c1{top:50px;left:80px;}
+.c2{top:90px;right:120px;}
+
+/* Buildings */
+.city{
+    position:absolute;
+    bottom:140px;
+    width:100%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-around;
+}
+
+.building{
+    background:#555;
+}
+
+.b1{width:30px;height:120px;}
+.b2{width:45px;height:180px;}
+.b3{width:35px;height:150px;}
+.b4{width:55px;height:220px;}
+.b5{width:30px;height:170px;}
+.b6{width:40px;height:140px;}
+.b7{width:50px;height:200px;}
+.b8{width:35px;height:160px;}
+.b9{width:60px;height:240px;}
+.b10{width:40px;height:180px;}
+
+/* Road */
+.road{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    height:120px;
+    background:#4b4b4b;
+}
+
+.road::before{
+    content:"";
+    position:absolute;
+    top:55px;
+    width:100%;
+    height:6px;
+    background:
+    repeating-linear-gradient(
+        to right,
+        white 0px,
+        white 50px,
+        transparent 50px,
+        transparent 100px
+    );
+}
+
+/* Tricolor strip */
+.flag-strip{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:20px;
+    background:
+    linear-gradient(
+        to right,
+        #ff9933 0 33%,
+        white 33% 66%,
+        #138808 66% 100%
+    );
+}
+
+/* Heading */
+.heading{
+    position:absolute;
+    top:15px;
+    width:100%;
+    text-align:center;
+    font-weight:bold;
+    font-size:22px;
+}
+
+.orange{
+    color:#ff9933;
+}
+
+.green{
+    color:#138808;
+}
+
+/* Car */
+.car{
+    position:absolute;
+    bottom:75px;
+    left:-180px;
+    width:140px;
+    height:50px;
+    animation:drive 8s linear infinite;
+}
+
+.car-body{
+    width:140px;
+    height:40px;
+    background:#ffc400;
+    border-radius:15px;
+    position:absolute;
+    bottom:0;
+}
+
+.car-top{
+    width:80px;
+    height:30px;
+    background:#ffc400;
+    position:absolute;
+    left:30px;
+    top:-20px;
+    border-radius:15px 15px 0 0;
+}
+
+.wheel{
+    width:28px;
+    height:28px;
+    background:#222;
+    border-radius:50%;
+    position:absolute;
+    bottom:-14px;
+    border:4px solid #ddd;
+}
+
+.w1{left:18px;}
+.w2{right:18px;}
+
+@keyframes drive{
+    from{
+        left:-180px;
+    }
+    to{
+        left:100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="scene">
+
+    <div class="sky"></div>
+
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+
+    <div class="heading">
+        <span class="orange">HAPPY</span>
+        INDEPENDENCE
+        <span class="green">DAY</span>
+    </div>
+
+    <div class="city">
+        <div class="building b1"></div>
+        <div class="building b2"></div>
+        <div class="building b3"></div>
+        <div class="building b4"></div>
+        <div class="building b5"></div>
+        <div class="building b6"></div>
+        <div class="building b7"></div>
+        <div class="building b8"></div>
+        <div class="building b9"></div>
+        <div class="building b10"></div>
+    </div>
+
+    <div class="road"></div>
+
+    <div class="car">
+        <div class="car-top"></div>
+        <div class="car-body"></div>
+        <div class="wheel w1"></div>
+        <div class="wheel w2"></div>
+    </div>
+
+    <div class="flag-strip"></div>
+
+</div>
+
+</body>
+</html>

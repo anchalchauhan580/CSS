@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dhaba Restaurant</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+    background-size:cover;
+    background-attachment:fixed;
+    font-family:Georgia, serif;
+}
+
+/* Header */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+
+.box{
+    width:350px;
+    background:black;
+    color:white;
+    border:6px solid red;
+    border-radius:30px;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* Registration Section */
+
+.main{
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+    margin-top:20px;
+}
+
+/* Offer Circle */
+
+.offer{
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:#58c0c0;
+    border:8px solid gray;
+    text-align:center;
+    padding-top:140px;
+    font-size:25px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+.offer hr{
+    margin:30px;
+}
+
+/* Form */
+
+.form-box{
+    width:600px;
+    border:6px dashed red;
+    text-align:center;
+    color:red;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+}
+
+.form-box h1{
+    margin-bottom:20px;
+}
+
+.form-box label{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.form-box input{
+    padding:5px;
+    margin:10px;
+}
+
+.form-box button{
+    padding:8px 15px;
+    margin:5px;
+}
+
+/* Menu Title */
+
+.menu-title{
+    width:450px;
+    margin:40px auto;
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border:6px solid red;
+    border-radius:30px;
+    font-size:40px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* Menu Cards */
+
+.menu-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    gap:40px;
+    margin-bottom:50px;
+}
+
+.card{
+    width:450px;
+    background:#14dfe3;
+    border:3px solid green;
+    border-radius:30px;
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.card h2{
+    padding:25px;
+    color:darkblue;
+    font-size:28px;
+}
+
+.card hr{
+    margin-bottom:20px;
+}
+
+.card ul{
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+.top,
+.main{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.offer{
+    width:350px;
+    height:350px;
+    padding-top:100px;
+    font-size:18px;
+}
+
+.form-box{
+    width:90%;
+}
+
+.card{
+    width:90%;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<div class="top">
+
+<div class="box">
+    Welcome to Dhaba tha <br><br>
+    You get quality perfect
+</div>
+
+<div class="box">
+    Home &nbsp; Menu &nbsp; Review &nbsp; Contact Us
+</div>
+
+<div class="box">
+    Email: sadwanr@gmail.com <br><br>
+    If you find any complain <br><br>
+    Contact No: 8709451380
+</div>
+
+</div>
+
+<!-- Registration -->
+
+<div class="main">
+
+<div class="offer">
+    <u>EXCITING OFFERS</u>
+    <hr>
+    <u>GET OUR SPECIAL THALI FOR ONLY RS 100 ON MONDAY</u>
+</div>
+
+<div class="form-box">
+
+<h1>PLEASE REGISTER HERE</h1>
+<hr><br>
+
+<form>
+
+<label>First Name</label><br>
+<input type="text" placeholder="Enter First Name"><br><br>
+
+<label>Last Name</label><br>
+<input type="text" placeholder="Enter Last Name"><br><br>
+
+<label>Your Age</label><br>
+<input type="number" placeholder="Enter Age"><br><br>
+
+<label>Email</label><br>
+<input type="email" placeholder="My Email"><br><br>
+
+<label>Date Of Birth</label><br>
+<input type="date"><br><br>
+
+<label>Are You More Than One Person?</label>
+<input type="checkbox"><br><br>
+
+<label>Do You Have Cough Or Cold?</label>
+<input type="checkbox"><br><br>
+
+<button type="submit">Submit Here</button>
+<button type="reset">Reset</button>
+
+</form>
+
+</div>
+
+</div>
+
+<!-- Menu -->
+
+<div class="menu-title">
+MENU
+</div>
+
+<div class="menu-container">
+
+<div class="card">
+<h2>Starters</h2>
+<hr>
+<ul>
+<li>Paneer Tikka</li>
+<li>Tomato Soup</li>
+<li>Afghani Chaap</li>
+<li>Gol Gappa</li>
+<li>Tikki</li>
+<li>Fried Rice</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>South Indian</h2>
+<hr>
+<ul>
+<li>Masala Dosa</li>
+<li>Idli Sambhar</li>
+<li>Mix Veg Uttapam</li>
+<li>Onion Dosa</li>
+<li>Vada Sambhar</li>
+<li>Paper Plain Dosa</li>
+<li>Tomato Uttapam</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Indian Kitchen</h2>
+<hr>
+<ul>
+<li>Shahi Paneer</li>
+<li>Kadhai Paneer</li>
+<li>Aloo Gobhi</li>
+<li>Dal Makhni</li>
+<li>Poori Sabji</li>
+<li>Malai Kofta</li>
+<li>Stuff Capsicum</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Rice & Salad</h2>
+<hr>
+<ul>
+<li>Plain Rice</li>
+<li>Jeera Rice</li>
+<li>Fried Rice</li>
+<li>Veg Pulao</li>
+<li>Veg Biryani</li>
+<li>Cheese Biryani</li>
+<li>Masala Salad</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Tandoori Bread</h2>
+<hr>
+<ul>
+<li>Butter Roti</li>
+<li>Missi Roti</li>
+<li>Onion Parantha</li>
+<li>Laccha Parantha</li>
+<li>Butter Naan</li>
+<li>Paneer Parantha</li>
+<li>Stuff Parantha</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Beverages And Other</h2>
+<hr>
+<ul>
+<li>Cold Coffee</li>
+<li>Cold Drinks</li>
+<li>Badam Milk</li>
+<li>Ice Cream</li>
+<li>Cake</li>
+<li>Gajar Halwa</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
